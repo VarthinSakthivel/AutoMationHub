@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIDO CLUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/1.png" alt="Logo"></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-sharp fa-solid fa-xmark" id="closeMenu" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="visits.html">VISITS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" id="menuIcon" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Events</h1>
+    </section>
+
+
+<!----Our EVENTS content ------->
+<section class="EVENTS">
+    <h1>EVENTS</h1>
+    <p>Autonomica'24, JIDO - The Industrial Automation Club presented 5 days event Autonomica'24, the grand finale celebrating the fusion of creativity and technology. This event showcases the most innovative prototypes across various sectors, including home automation, healthcare, safety & security, and environment monitoring. Join us to explore groundbreaking ideas and witness the future of automation, as the brightest minds present visionary prototypes that promise to reshape industries and drive innovation!</p>
+
+    <div class="row">
+        <div class="EVENTS-col">
+            <img src="images/event1.jpg">
+            <div class="layer">
+                <h3>FUN</h3>
+            </div>
+        </div>
+        <div class="EVENTS-col">
+            <img src="images/event2.jpg">
+            <div class="layer">
+                <h3>CODING</h3>
+            </div>
+        </div>
+        <div class="EVENTS-col">
+            <img src="images/event3.jpg">
+            <div class="layer">
+                <h3>AUTOMATION</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!----EVENT2--->
+<section class="VISITS">
+    <h1>TECH-TALK</h1>
+    <p> JIDO-The Automation Club have organised a Tech-Talk regarding "Emerging Aerospace Trends, challenges and oppurtunities on 17th November 2023 by Mr.Govind Yadav.</p>
+
+    <div class="row">
+        <div class="VISITS-col">
+            <img src="images/techvisit1.jpg">
+            <h3>Our Honorable Guest</h3>
+            <p>Our Guest Mr.Govind Yadav had engaged us with his inspiring talk on "Emerging Aerospace Trends",that inspired everyone to think in an innovative perspective and come up with creative ideas.</p>
+        </div>
+        <div class="VISITS-col">
+            <img src="images/techvisit2.jpg">
+            <h3>Interactive talk</h3>
+            <p> An enriching experience where students interacted with Mr.Govind Yadav and Our Students gained many valuable insights during the tech-talk. </p>
+        </div>
+        <div class="VISITS-col">
+            <img src="images/techvisit3.jpg">
+            <h3>Members</h3>
+            <p>Our Club Members who took great part in organising this tech-talk and made this event a grand success</p>
+        </div>
+
+    </div>
+
+</section>    
+
+<!-----Footer----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Our Club Welcomes Everyone Who Are Passionate About Automation</p>
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/jido_ase?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jido-club-50a514254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+<!---JavaScript for Toggle Menu ---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var menuIcon = document.querySelector("#menuIcon");
+        var closeIcon = document.querySelector("#closeMenu");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    </script>
+</body>
+</html>
